@@ -1,0 +1,22 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinGM05/Twitter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinGM05/Twitter/issues"
+  },
+  "homepage": "https://github.com/martinGM05/Twitter#readme",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}
