@@ -10,6 +10,14 @@ class UserService {
         return [user.username, user.name, user.bio]
     }
 
+    static updateUserUsername(user, username){
+        return user.username = username
+    }
+
+    static getAllUsernames(users){
+        return users.map(user => user.username)
+    }
+
 
 }
 
