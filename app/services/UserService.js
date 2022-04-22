@@ -6,7 +6,6 @@ class UserService {
     }
 
     static getInfo(user){
-        // Operator spreed
         return [user.username, user.name, user.bio]
     }
 
@@ -17,8 +16,6 @@ class UserService {
     static getAllUsernames(users){
         return users.map(user => user.username)
     }
-
-
 }
 
 module.exports = UserService
