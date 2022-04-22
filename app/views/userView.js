@@ -4,7 +4,7 @@ class UserView {
     static createUser(payload) {
         if (payload) {
             if (payload.username && payload.name && payload.id) {
-                return useService.create(payload)
+                return {msg: 'test'}
             }else{
                 return {
                     error: "necesitan tener un valor válido"
