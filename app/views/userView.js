@@ -1,10 +1,15 @@
-const useService = require('./../../app/services/UserService')
+const userService = require('./../../app/services/UserService')
 
 class UserView {
     static createUser(payload) {
         if (payload) {
             if (payload.username && payload.name && payload.id) {
-                return {msg: 'test'}
+                const user = userService.create(payload.id, payload.username, payload.name)
+                return {
+                    name: user.name,
+                    username: user.username,
+                    id: user.id
+                }
             }else{
                 return {
                     error: "necesitan tener un valor válido"
